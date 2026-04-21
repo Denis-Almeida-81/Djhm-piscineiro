@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("./assets/img-fundo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+    /* muda aqui */
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.7);
+    /* suaviza tudo */
+    z-index: -1;
+}
+
+body {
+    position: relative;
+    z-index: 1;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px auto;
+    border-radius: 8px;
+}
+
+.logo-piscina {
+    width: 200px;
+    height: auto;
+    margin-right: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 20px;
+    color: #7a5c00;
+    text-align: center;
+}
+
+span {
+    display: block;
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.link-btn {
+    background-color: #7a5c00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.link-btn:hover {
+    background-color: #5a4300;
+}
+
+h2 {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color:  #7a5c00;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;  
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    color: #2b3099;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.logo-services {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.link-icone {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+p {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 5px;
+}
