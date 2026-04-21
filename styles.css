@@ -2,50 +2,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
 }
 
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-
-    background-image: url("./assets/img-fundo.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    opacity: 0.15;
-    pointer-events: none;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+        url("./assets/img-fundo.jpg") center/cover no-repeat;
+    opacity: 1;
     z-index: 0;
-    /* muda aqui */
 }
 
-body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.7);
-    /* suaviza tudo */
-    z-index: -1;
-}
-
-body {
+header,
+nav,
+main,
+footer {
     position: relative;
     z-index: 1;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 50px;
     padding: 20px auto;
     border-radius: 8px;
@@ -54,16 +50,15 @@ body {
 .logo-piscina {
     width: 200px;
     height: auto;
-    margin-right: 50px;
-    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold;
     padding: 20px;
-    color: #7a5c00;
+    color: #0077b6;
     text-align: center;
 }
 
@@ -77,8 +72,7 @@ span {
 .nav-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-evenly;
 }
 
 .nav-link {
@@ -88,7 +82,7 @@ span {
 }
 
 .link-btn {
-    background-color: #7a5c00;
+    background-color: #00b4d8;
     color: #fff;
     padding: 10px 20px;
     border-radius: 8px;
@@ -96,23 +90,24 @@ span {
     font-size: 20px;
     transition: 0.3s;
 }
+
 .link-btn:hover {
-    background-color: #5a4300;
+    background-color: #0077b6;
 }
 
 h2 {
     display: block;
     text-align: center;
     font-size: 30px;
-    color:  #7a5c00;
+    color: #0077b6;
     margin-bottom: 20px;
 }
 
 .services {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 30px;  
+
 }
 
 .card {
@@ -124,11 +119,17 @@ h2 {
     margin: 10px;
     width: 400px;
     text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 h3 {
     font-size: 20px;
-    color: #2b3099;
+    color: #000;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -143,7 +144,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 80px;
 }
 
 .link-icone {
@@ -161,4 +162,49 @@ p {
     max-width: 750px;
     margin: 0 auto;
     padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .services {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    span {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .logo-services {
+        width: 90%;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
