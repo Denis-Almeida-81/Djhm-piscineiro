@@ -41,12 +41,14 @@
                 <h2>Nossos Serviços</h2>
                 <div class="services">
                     <div class="card">
-                        <h3>Recuperação</h3>
+                        <h3>Recuperação da Piscina</h3>
                         <img class="logo-services" src="./assets/recup-piscina.jpg" alt="Recuperação de piscina">
+                    <p>Recuperação completa da sua piscina com os melhores materiais e técnicas.</p>
                     </div>
                     <div class="card">
-                        <h3>Manutenção</h3>
+                        <h3>Manutenção da Piscina</h3>
                         <img class="logo-services" src="./assets/manut-piscinas.jpeg" alt="Manutenção de piscinas">
+                        <p>Manutenção preventiva e corretiva para garantir o bom funcionamento da sua piscina.</p>
                     </div>
                 </div>
             </div>
@@ -61,6 +63,27 @@
                         target="_blank">
                         <i class="fab fa-instagram"></i>Instagram</a>
                 </div>
+            </div>
+        </section>
+
+        <section class="orcamento">
+            <div class="container">
+                <h2>Simule seu orçamento</h2>
+
+                <select id="tamanho">
+                    <option value="200">Piscina até 20m³</option>
+                    <option value="300">Piscina até 50m³</option>
+                    <option value="500">Piscina acima de 50m³</option>
+                </select>
+
+                <select id="tipo">
+                    <option value="1">Recuperação da piscina</option>
+                    <option value="1.5">Manutenção da piscina</option>
+                </select>
+
+                <button onclick="calcular()">Calcular</button>
+
+                <p id="resultado"></p>
             </div>
         </section>
     </main>
