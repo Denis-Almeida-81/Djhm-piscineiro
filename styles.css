@@ -69,26 +69,49 @@ span {
     margin-top: 10px;
 }
 
+nav {
+    position: relative;
+    z-index: 1000;
+}
+
+
+
+/* Botão escondido no desktop */
+#menu-btn {
+    display: none;
+}
+
 .nav-content {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 20px;
+    z-index: 9999;
+    position: static;
 }
 
 .nav-link {
+    display: block;
+    width: 100%;
     color: #333;
+    text-align: center;;
     text-decoration: none;
     font-size: 20px;
+    padding: 10px;
 }
 
 .link-btn {
+    display: block;
+    width: 100%;
     background-color: #00b4d8;
     color: #fff;
     padding: 10px 20px;
     border-radius: 8px;
+    text-align: center;;
     text-decoration: none;
     font-size: 20px;
     transition: 0.3s;
+    padding: 10px;
 }
 
 .link-btn:hover {
@@ -170,41 +193,63 @@ p {
         gap: 20px;
     }
 
-    .nav-content {
-        flex-direction: column;
-        gap: 20px;
-    }
+.services {
+    flex-direction: column;
+    gap: 20px;
+}
 
-    .services {
-        flex-direction: column;
-        gap: 20px;
-    }
+.card {
+    width: 100%;
+}
 
-    .card {
-        width: 100%;
-    }
+h1 {
+    font-size: 40px;
+}
 
-    h1 {
-        font-size: 40px;
-    }
+span {
+    font-size: 15px;
+}
 
-    span {
-        font-size: 15px;
-    }
+h2 {
+    font-size: 25px;
+}
 
-    h2 {
-        font-size: 25px;
-    }
+h3 {
+    font-size: 18px;
+}
 
-    h3 {
-        font-size: 18px;
-    }
+.logo-services {
+    width: 90%;
+}
 
-    .logo-services {
-        width: 90%;
-    }
+p {
+    font-size: 14px;
+}
 
-    p {
-        font-size: 14px;
-    }
+/* Mobile */
+.nav-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+
+    width: 220px;
+    padding: 15px;
+
+    background: white;
+    border-radius: 10px;
+
+    gap: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#menu.ativo {
+    display: flex;
+}
+
+#menu-btn {
+    display: block ;
+}
 }
