@@ -155,7 +155,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    background-color:#fff;
+    background-color: #fff;
     color: #0077b6;
     margin-bottom: 10px;
     text-align: center;
@@ -273,34 +273,35 @@ p {
         font-size: 14px;
     }
 
-    /* Mobile */
     .nav-content {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        left: 10px;
-        width: 200px;
-        padding: 15px;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100vh;
         background: white;
-        border-radius: 10px;
-        gap: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        transition: left 0.3s ease;
+        z-index: 10000;
     }
 
     #menu.ativo {
-        display: flex;
+        left: 0;
     }
 
     #menu-btn {
         display: block;
-        position: absolute;
-        top: 10px;
-        left: 10px;
+        position: fixed;
+        top: 15px;
+        left: 15px;
         font-size: 28px;
         background: none;
         border: none;
         cursor: pointer;
+        z-index: 10001;
     }
 
     .orcamento {
