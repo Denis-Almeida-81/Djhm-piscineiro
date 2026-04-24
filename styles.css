@@ -202,6 +202,8 @@ label {
     font-size: 14px;
     color: #333;
     margin-top: 15px;
+    padding-left: 10px;
+    
 }
 
 .orcamento select {
