@@ -7,6 +7,13 @@ Site desenvolvido para divulgação de serviços de limpeza e manutenção de pi
 🔗 Acesse o site: https://denis-almeida-81.github.io/Djhm-piscineiro/
 <br>
 <br>
+## Demonstração
+<br>
+<br>
+
+![Demonstração do site](./assets/demo-djhm.gif)
+
+<br>
 ## Funcionalidades
 
 - Menu responsivo (mobile)
